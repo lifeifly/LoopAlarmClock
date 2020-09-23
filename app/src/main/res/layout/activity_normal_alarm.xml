@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".loop.LoopAlarmAcitivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_back_titlebar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_bt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="普通闹钟"
+            android:textColor="@color/tabNormal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btn_save_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="保存"
+            android:textColor="@color/tabNormal"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TimePicker
+        android:id="@+id/timer_picker"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:timePickerMode="spinner"
+        android:layout_marginBottom="25dp"/>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/ring_interval"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再响间隔,次数" />
+
+
+        <TextView
+            android:id="@+id/tv_ring_interval"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_ring_interval"
+            android:gravity="center"
+            android:text="10分钟，3次" />
+
+
+        <ImageView
+            android:id="@+id/iv_ring_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/ring_time_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="响铃时长" />
+
+
+        <TextView
+            android:id="@+id/tv_ring_time"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_ring_time"
+            android:gravity="center"
+            android:text="5分钟" />
+
+
+        <ImageView
+            android:id="@+id/iv_ring_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+
+    <RelativeLayout
+        android:id="@+id/label_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签" />
+
+        <TextView
+            android:id="@+id/tv_label_normal"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_label_normal"
+            android:gravity="center"
+            android:text="闹钟" />
+
+        <ImageView
+            android:id="@+id/iv_label_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/vabrate_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="震动" />
+
+        <TextView
+            android:id="@+id/tv_vabrate_normal"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_vabrate_normal"
+            android:gravity="center"
+            android:text="开" />
+
+        <ImageView
+            android:id="@+id/iv_vabrate_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/repeat_normal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重复" />
+
+        <TextView
+            android:id="@+id/tv_week_normal"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_repeat_normal"
+            android:gravity="center"
+            android:text="不重复" />
+
+        <ImageView
+            android:id="@+id/iv_repeat_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        style="@style/bigtext_color_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="重复周期" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/c0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/week_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="每天"
+            android:textColor="@color/tabNormal" />
+
+        <CheckBox
+            android:id="@+id/c1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/week_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="周一"
+            android:textColor="@color/tabNormal" />
+
+        <CheckBox
+            android:id="@+id/c2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/week_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="周二"
+            android:textColor="@color/tabNormal" />
+
+        <CheckBox
+            android:id="@+id/c3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/week_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="周三"
+            android:textColor="@color/tabNormal" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/c4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/week_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="周四"
+            android:textColor="@color/tabNormal" />
+        <CheckBox
+            android:id="@+id/c5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/week_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="周五"
+            android:textColor="@color/tabNormal" />
+
+        <CheckBox
+            android:id="@+id/c6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/week_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="周六"
+            android:textColor="@color/tabNormal" />
+
+        <CheckBox
+            android:id="@+id/c7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/week_btn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="周日"
+            android:textColor="@color/tabNormal" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

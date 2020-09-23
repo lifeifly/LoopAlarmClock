@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="普通闹钟"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_label_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标签"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_time_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="15:12"
+        android:textSize="30sp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_category_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:text="间隔"
+        android:textSize="15sp" />
+
+
+    <CheckBox
+        android:id="@+id/cb_lv"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_checkbox"
+        android:buttonTint="@color/colorAccent"></CheckBox>
+</RelativeLayout>

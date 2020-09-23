@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".loop.LoopAlarmAcitivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_back_titlebar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_bt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="间隔闹钟"
+            android:textColor="@color/tabNormal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="保存"
+            android:textColor="@color/tabNormal"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TimePicker
+        android:id="@+id/timer_picker"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:timePickerMode="spinner"
+        android:layout_marginBottom="25dp"/>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/ring_interval"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="再响间隔,次数" />
+
+
+        <TextView
+            android:id="@+id/tv_ring_interval"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_ring_interval"
+            android:gravity="center"
+            android:text="10分钟，3次" />
+
+
+        <ImageView
+            android:id="@+id/iv_ring_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/ring_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="响铃时长" />
+
+
+        <TextView
+            android:id="@+id/tv_ring_time"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_ring_time"
+            android:gravity="center"
+            android:text="5分钟" />
+
+
+        <ImageView
+            android:id="@+id/iv_ring_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/date_loop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起始日期" />
+
+        <TextView
+            android:id="@+id/year_date_loop"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/line1"
+            android:gravity="center"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/month_date_loop"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/tabNormal" />
+
+        <TextView
+            android:id="@+id/month_date_loop"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/line2"
+            android:gravity="center"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/day_date_loop"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/tabNormal" />
+
+        <TextView
+            android:id="@+id/day_date_loop"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_date_loop"
+            android:gravity="center"
+            android:text="00" />
+
+
+        <ImageView
+            android:id="@+id/iv_date_loop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/label_loop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签" />
+
+        <TextView
+            android:id="@+id/tv_label_loop"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_label_loop"
+            android:gravity="center"
+            android:text="闹钟" />
+
+        <ImageView
+            android:id="@+id/iv_label_loop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/vabrate_loop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="震动" />
+
+        <TextView
+            android:id="@+id/vabrate_vabrate_loop"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_vabrate_loop"
+            android:gravity="center"
+            android:text="开" />
+
+        <ImageView
+            android:id="@+id/iv_vabrate_loop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <RelativeLayout
+        android:id="@+id/duration_loop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/bigtext_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="间隔" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/day_text"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/day_text"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/tv_hour"
+            android:text="@string/day" />
+
+        <TextView
+            android:id="@+id/tv_hour"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/hour_text"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/hour_text"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/tv_minute"
+            android:text="@string/hour" />
+
+        <TextView
+            android:id="@+id/tv_minute"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/minute_text"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/minute_text"
+            style="@style/text_color_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/iv_duration_loop"
+            android:text="@string/minute" />
+
+
+        <ImageView
+            android:id="@+id/iv_duration_loop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arr_right" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分"
+            android:textColor="@color/tabNormal" />
+
+        <SeekBar
+            android:id="@+id/mimute_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="60"
+            android:maxHeight="5dp"
+            android:thumb="@drawable/seekbar_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时"
+            android:textColor="@color/tabNormal" />
+
+        <SeekBar
+            android:id="@+id/hour_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="24"
+            android:maxHeight="5dp"
+            android:thumb="@drawable/seekbar_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天"
+            android:textColor="@color/tabNormal" />
+
+        <SeekBar
+            android:id="@+id/day_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:maxHeight="5dp"
+            android:thumb="@drawable/seekbar_btn" />
+    </LinearLayout>
+
+</LinearLayout>

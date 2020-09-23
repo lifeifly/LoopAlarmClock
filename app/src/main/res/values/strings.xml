@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">LoopAlarmClock</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="day">天</string>
+    <string-array name="time_string">
+        <item>1分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>15分钟</item>
+        <item>20分钟</item>
+        <item>25分钟</item>
+        <item>30分钟</item>
+    </string-array>
+    <string name="tv1">温暖绿色</string>
+    <string name="tv2">粉墙玉砌</string>
+    <string name="tv3">恍如灯火</string>
+    <string name="tv4">晴空万里</string>
+    <string name="tv5">灰色孤独</string>
+    <string name="tv6">夕阳无限</string>
+    <string name="music1">Apologize</string>
+    <string name="music2">Because You Love Me</string>
+    <string name="music3">Broken Angle</string>
+    <string name="music4">Call Me Maybe</string>
+    <string name="music5">Christmas In My Heart</string>
+    <string name="music6">Could This Be Love</string>
+    <string name="music7">Deutsch Land</string>
+    <string name="music8">Dilemma</string>
+    <string name="music9">Do Not Let Me Fall</string>
+    <string name="music10">Falling Star</string>
+    <string name="music11">I Could Be The One</string>
+    <string name="music12">If You Conme To Me</string>
+</resources>

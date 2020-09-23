@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg8"
+    tools:context=".AlarmViewActivity"
+    >
+
+    <TextView
+        android:id="@+id/tv_hour_alarmview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="13:15"
+        android:textColor="@color/tabNormal"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/tv_date_alarmview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hour_alarmview"
+        android:layout_centerHorizontal="true"
+        android:text="2020年9月6号"
+        android:textColor="@color/tabNormal"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_label_alarmview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="nihao"
+        android:textColor="@color/tabNormal"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btn_after10"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_label_alarmview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_after10"
+        android:text="10分钟后提醒"
+        android:textColor="@color/tabNormal"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_close_alarmview"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_close"
+        android:text="关闭"
+        android:textColor="@color/tabNormal"
+        android:textSize="25sp" />
+</RelativeLayout>
